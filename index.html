@@ -12,9 +12,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Custom styling */
+        
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7e5d1;
+            color: #6b3e26;
+        }
+
+        .navbar, .footer-custom {
+            background-color: #6b3e26;
+        }
+
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: #f7e5d1;
+        }
+
+        .navbar .nav-link.active, .navbar .nav-link:hover {
+            color: #f7e5d1;
+        }
+
+        .footer-custom {
+            color: #f7e5d1;
         }
         
         .profile-img {
@@ -24,14 +47,14 @@
         }
         
         .social-links a {
-            color: #fff;
+            color: #f7e5d1;
             text-decoration: none;
             margin: 0 15px;
             transition: color 0.3s ease;
         }
         
         .social-links a:hover {
-            color: #007bff;
+            color: #8d6956;
         }
         
         section {
@@ -43,13 +66,24 @@
             display: flex;
             align-items: center;
         }
+
+        .btn-email {
+            background-color: #6b3e26;
+            color: #f7e5d1;
+            border-color: #6b3e26;
+        }
+        .btn-email:hover {
+            background-color: #8d6956;
+            color: #fff;
+            border-color: #8d6956;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg border-bottom border-body fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Portfolio Saya</a>
+            <a class="navbar-brand fw-bold" href="#home">TungguMiriz</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,9 +93,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tentang">Tentang</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>
@@ -81,16 +112,32 @@
                     <div class="py-5">
                         <img src="images/mirza_selfie.jpeg" class="profile-img rounded-circle mb-4 shadow">
                         <h1 class="display-4 fw-bold mb-3">Al Mirza Faroqta</h1>
-                        <p class="lead mb-2"><strong>NIM:</strong>2304140086</p>
-                        <p class="lead text-muted"><strong>Program Studi:</strong> Sistem Informasi</p>
+                        <p class="lead mb-2"><strong>Sistem Informasi </strong>2304140086</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="py-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="mb-4">Hubungi Saya</h2>
+                    <p class="mb-4">Jangan ragu untuk menghubungi saya jika ingin berkolaborasi atau sekadar berdiskusi!</p>
+                    
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="mailto:almirza@students.unnes.ac.id" class="btn btn-email btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="footer-custom text-white py-4 mt-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center text-md-center">
@@ -103,8 +150,8 @@
                         </a>
                         <a href="https://www.linkedin.com/in/al-mirza-faroqta" target="_blank" title="LinkedIn">
                             <i class="fab fa-linkedin fa-2x"></i>
-                        <a href="https://www.x.com/mirjett" target="_blank" title="X">
-                            <i class="fa-brands fa-X-twitter fa-2x"></i>
+                        <a href="https://steamcommunity.com/profiles/76561198845621740" target="_blank" title="Steam">
+                            <i class="fa-brands fa-steam fa-2x"></i>
                         </a>
                     </div>
                 </div>
@@ -118,6 +165,7 @@
 </body>
 
 </html>
+
 
 
 
